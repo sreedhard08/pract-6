@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Text Position Example</title> 
+ 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #e5e7e9; 
+            margin: 0; 
+            padding: 5px; 
+        } 
+ 
+        h2 { 
+            margin: 0 0 10px 0; 
+            font-weight: normal; 
+        } 
+ 
+        .image-container { 
+            position: relative; 
+            height: 270px; 
+            background-image: url("car.jpg"); 
+            background-size: cover; 
+            background-position: center; 
+            opacity: 0.65; 
+        } 
+ 
+        .text { 
+            position: absolute; 
+            font-size: 17px; 
+        } 
+ 
+        .top-left { 
+            top: 10px; 
+            left: 15px; 
+        } 
+ 
+        .top-right { 
+            top: 10px; 
+            right: 15px; 
+        } 
+ 
+        .bottom-left { 
+            bottom: 10px; 
+            left: 15px; 
+        } 
+ 
+        .bottom-right { 
+            bottom: 10px; 
+            right: 15px; 
+        } 
+ 
+        .centered { 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+        } 
+ 
+        .try { 
+            margin-top: 10px; 
+            margin-bottom: 10px; 
+        } 
+ 
+        button { 
+            background-color: #00a86b; 
+            color: white; 
+            border: none; 
+            padding: 10px 18px; 
+            margin-right: 5px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            cursor: pointer; 
+        } 
+ 
+        button:hover { 
+            background-color: #008f5a; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+    <h2>Example</h2> 
+ 
+    <div class="image-container"> 
+ 
+        <div class="text top-left">Top Left</div> 
+ 
+        <div class="text top-right">Top Right</div> 
+ 
+        <div class="text bottom-left">Bottom Left</div> 
+ 
+        <div class="text bottom-right">Bottom Right</div> 
+ 
+        <div class="text centered">Centered</div> 
+ 
+    </div> 
+ 
+    <div class="try">Try it Yourself:</div> 
+ 
+    <button>Top Left »</button> 
+    <button>Top Right »</button> 
+    <button>Bottom Left »</button> 
+    <button>Bottom Right »</button> 
+<button>Centered »</button> 
+</body> 
+</html> 
